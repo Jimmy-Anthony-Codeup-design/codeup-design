@@ -28,11 +28,13 @@
             font-size: 48px;
         }
         .rounded-circle{
-            height: 105px;
-            width: 105px;
+            height: calc(105px + .5em);
+            width: calc(105px + .5em);
+            margin: 0 auto;
+            line-height: calc(105px - .5em);
+            align-items: center;
             font-family: 'Anton', sans-serif;
             border: .5em solid white;
-            margin: 1em;
         }
         #red_button {
             background-color: #E6563B;
@@ -64,8 +66,7 @@
 <!---------------------HEADER: START------------------------------------------->
     <div class="row text-center" id="header-row">
         <div class="col-12">
-            <h1>VISUAL DESIGN &</h1>
-            <h1>WEB DEVELOPMENT</h1>
+            <h1>VISUAL DESIGN &<br>WEB DEVELOPMENT</h1>
             <div class="mt-5">
             <h2>FROM PARK CITY, UTAH</h2>
             </div>
@@ -74,28 +75,43 @@
 <!---------------------HEADER: END------------------------------------------->
 
 <!---------------------ICON ROW 1: START------------------------------------------->
-    <div class="row justify-content-center">
+    <div class="row py-2 justify-content-center">
 
-        <div class="col-12 align-items-center" id="icon-row_1"></div>
-        <button id="red_button" class="btn btn-light rounded-circle text-white text-center">
-            DESIGN
-        </button>
-        <button id="yellow_button" class="btn btn-light rounded-circle text-white text-center">
-            DEVELOP
-        </button>
+        <div class="col-2"></div>
+        <div  class="text-white text-center col-4">
+            <div id="red_button" class="my-auto rounded-circle">
+                DESIGN
+            </div>
+        </div>
+
+
+        <div  class="text-white text-center col-4">
+            <div id="yellow_button" class="my-auto rounded-circle">
+                DEVELOP
+            </div>
+        </div>
+        <div class="col-2"></div>
+
     </div>
 <!---------------------ICON ROW 1: END------------------------------------------->
 
 <!---------------------ICON ROW 2: START------------------------------------------->
-    <div class="row justify-content-center">
+    <div class="row py-2 justify-content-center">
 
-        <div class="col-12" id="icon-row_2"></div>
-        <button id="green_button" class="btn btn-light rounded-circle text-white text-center">
-            SUPPORT
-        </button>
-        <button id="blue_button" class="btn btn-light rounded-circle text-white text-center">
-            HOST
-        </button>
+        <div class="col-2"></div>
+        <div  class="text-white text-center col-4">
+            <div id="green_button" class="my-auto rounded-circle">
+                SUPPORT
+            </div>
+        </div>
+
+
+        <div  class="text-white text-center col-4">
+            <div id="blue_button" class="my-auto rounded-circle">
+                HOST
+            </div>
+        </div>
+        <div class="col-2"></div>
     </div>
 <!---------------------ICON ROW 2: END------------------------------------------->
 
