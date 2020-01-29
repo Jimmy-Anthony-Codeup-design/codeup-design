@@ -15,6 +15,10 @@
 
 
     <style>
+        .container {
+            height: 100vh;
+            background-color: #E6E6E6;
+        }
         h1 {
             font-family: 'Anton', sans-serif;
             font-size: 64px;
@@ -26,6 +30,21 @@
         .rounded-circle{
             height: 105px;
             width: 105px;
+            font-family: 'Anton', sans-serif;
+            border: .5em solid white;
+            margin: 1em;
+        }
+        #red_button {
+            background-color: #E6563B;
+        }
+        #yellow_button {
+            background-color: #EB9D3A;
+        }
+        #green_button {
+            background-color: #7CB06C;
+        }
+        #blue_button {
+            background-color: #00ABA9;
         }
     </style>
 
@@ -33,12 +52,16 @@
 
 
 <body>
-<div class="container text-center bg-secondary col-12">
+<div class="container text-center col-12">
 <!---------------------CONTAINER: START------------------------------------------->
-    <div class="row" id="navbar-row ">
+
+<!---------------------NAVBAR: START------------------------------------------->
+    <div class="row" id="navbar-row">
         <div class="col-12 text-center"></div>
     </div>
+<!---------------------NAVBAR: END------------------------------------------->
 
+<!---------------------HEADER: START------------------------------------------->
     <div class="row text-center" id="header-row">
         <div class="col-12">
             <h1>VISUAL DESIGN &</h1>
@@ -48,30 +71,46 @@
             </div>
         </div>
     </div>
+<!---------------------HEADER: END------------------------------------------->
 
+<!---------------------ICON ROW 1: START------------------------------------------->
     <div class="row justify-content-center">
-        <div class="col-12 align-items-center" id="icon-row"></div>
-        <div class="rounded-circle border border-white bg-danger text-white text-center">
-            <span>DESIGN</span>
-        </div>
-        <div class="rounded-circle border border-white bg-warning text-white ">
-            DEVELOP
-        </div>
-        <div class="rounded-circle border border-white bg-success text-white ">
-            SUPPORT
-        </div>
-        <div class="rounded-circle border border-white bg-primary text-white ">
-            HOST
-        </div>
-    </div>
 
+        <div class="col-12 align-items-center" id="icon-row_1"></div>
+        <button id="red_button" class="btn btn-light rounded-circle text-white text-center">
+            DESIGN
+        </button>
+        <button id="yellow_button" class="btn btn-light rounded-circle text-white text-center">
+            DEVELOP
+        </button>
+    </div>
+<!---------------------ICON ROW 1: END------------------------------------------->
+
+<!---------------------ICON ROW 2: START------------------------------------------->
+    <div class="row justify-content-center">
+
+        <div class="col-12" id="icon-row_2"></div>
+        <button id="green_button" class="btn btn-light rounded-circle text-white text-center">
+            SUPPORT
+        </button>
+        <button id="blue_button" class="btn btn-light rounded-circle text-white text-center">
+            HOST
+        </button>
+    </div>
+<!---------------------ICON ROW 2: END------------------------------------------->
+
+<!---------------------SELECTED WORK ROW: START------------------------------------------->
     <div class="row">
         <div class="col-12" id="selected-work-row"></div>
     </div>
+<!---------------------SELECTED WORK ROW: END------------------------------------------->
 
+<!---------------------FOOTER ROW: START------------------------------------------->
     <div class="row">
         <div class="col-12" id="footer-row"></div>
     </div>
+<!---------------------FOOTER ROW: END------------------------------------------->
+
 <!---------------------CONTAINER: END------------------------------------------->
 </div>
 <!-- Optional JavaScript -->
