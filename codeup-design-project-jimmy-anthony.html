@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Codeup Design Project</title>
 
 
@@ -19,15 +19,23 @@
             font-family: 'Anton', sans-serif;
             font-size: 64px;
         }
+        h2 {
+            font-family: 'Anton', sans-serif;
+            font-size: 48px;
+        }
+        .rounded-circle{
+            height: 105px;
+            width: 105px;
+        }
     </style>
 
 <!--    font-family: 'Abel', sans-serif;-->
 
 
 <body>
-<div class="container text-center">
+<div class="container text-center bg-secondary col-12">
 <!---------------------CONTAINER: START------------------------------------------->
-    <div class="row" id="navbar-row">
+    <div class="row" id="navbar-row ">
         <div class="col-12 text-center"></div>
     </div>
 
@@ -35,11 +43,26 @@
         <div class="col-12">
             <h1>VISUAL DESIGN &</h1>
             <h1>WEB DEVELOPMENT</h1>
+            <div class="mt-5">
+            <h2>FROM PARK CITY, UTAH</h2>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12" id="icon-row"></div>
+    <div class="row justify-content-center">
+        <div class="col-12 align-items-center" id="icon-row"></div>
+        <div class="rounded-circle border border-white bg-danger text-white text-center">
+            <span>DESIGN</span>
+        </div>
+        <div class="rounded-circle border border-white bg-warning text-white ">
+            DEVELOP
+        </div>
+        <div class="rounded-circle border border-white bg-success text-white ">
+            SUPPORT
+        </div>
+        <div class="rounded-circle border border-white bg-primary text-white ">
+            HOST
+        </div>
     </div>
 
     <div class="row">
