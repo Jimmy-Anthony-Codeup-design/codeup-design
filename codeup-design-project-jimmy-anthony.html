@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/068546a344.js"></script>
+
+
     <title>Codeup Design Project</title>
 
     <style>
@@ -61,12 +64,15 @@
         }
 
         .image-list {
-            border: solid 1em lightgray;
+            border: solid .2em lightgray;
             border-radius: 2%;
             width: 100%;
             height: auto
         }
-
+        .side_images {
+            border: solid .2em lightgray;
+            border-radius: 2%;
+        }
         .small-circle {
             height: 18px;
             width: 18px;
@@ -75,43 +81,55 @@
             display: inline-block;
             margin: 5px;
         }
-
         .small-red {
             background-color: #E6563B;
         }
-
         .small-yellow {
             background-color: #EB9D3A;
         }
-
         .small-green {
             background-color: #7CB06C;
         }
-
         .small-blue {
             background-color: #00ABA9;
         }
-
         .icons {
             float: right;
         }
-
         .items {
             display: inline-block;
             margin: 1em 1em;
         }
-
         #logo {
             height: calc(105px + .5em);
             width: calc(105px + .5em);
             margin: 0 auto;
             line-height: calc(105px - .5em);
         }
-
         p {
             font-size: 46px;
         }
-
+        .card-body {
+            background-color: #E6E6E6;
+            padding: 0;
+        }
+        .card-body img {
+            height: 48px;
+            width: 48px;
+        }
+        .card-text {
+            font-size: 1.1em;
+            height: 48px;
+        }
+        .card{
+            border-color: #E6E6E6;
+        }
+        h5 {
+            font-family: 'Anton', sans-serif;
+        }
+        .col-md-4 {
+            background-color: #E6E6E6;
+        }
         /*// Small devices (landscape phones, 576px and up)*/
         @media (min-width: 576px) {
             body {
@@ -312,26 +330,82 @@
         <div class="card">
         <div class="card-body">
             <div class="row">
-                <img src="images/mobile-phone.jpg" alt="" class="img-fluid">
-                <span> THE ADMIN AND ABSOLUTE POSITIONING </span>
-            </div>
-            <div class="row">
-                <img src="images/head.jpg" alt="" class="img-fluid">
-                <span> NIBBLER AWESOME WEBSITE TESTING </span>
-            </div>
-            <div class="row">
-                <img src="images/ipad.jpg" alt="" class="img-fluid">
-                <span> HOW TO GET GOOGLE TO LIKE YOU</span>
-            </div>
-            <div class="row">
-                <span>LAST TWEET </span>
 
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae delectus dignissimos, dolorem eaque esse exercitationem itaque libero natus officiis omnis repudiandae velit, voluptatum. Assumenda fuga illo odit vitae? Perferendis.</span>
-            </div>
-        </div>
-    </div>
-</div>
 
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="images/mobile-phone.jpg" class="card-img img-fluid side_images" alt="#">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-text">THE ADMIN BAR AND ABSOLUTE POSITIONING</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="images/head.jpg" class="card-img img-fluid side_images" alt="#">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-text">NIBBLER AWESOME WEBSITE TESTING</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="images/ipad.jpg" class="card-img img-fluid side_images" alt="#">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-text">HOW TO GET GOOGLE TO LIKE YOU</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--         <div class="card mb-3">-->
+<!--                    <div class="row no-gutters">-->
+<!--                        <div class="col-md-4">-->
+<!--                            <i class="fab fa-twitter card-img img-fluid side_images"></i>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-8">-->
+<!--                            <div class="card-body">-->
+<!--                                <p class="card-text">LAST TWEET<br>-->
+<!--                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio fugit in laborum porro quidem repellendus temporibus!</span>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+
+
+                <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/twitter.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">LAST TWEET</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 <!---------------------IMAGESROW: END------------------------------------------->
 <!---------------------CONTAINER: END------------------------------------------->
