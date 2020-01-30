@@ -12,8 +12,6 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Codeup Design Project</title>
 
-
-
     <style>
         body {
             height: 100vh;
@@ -59,7 +57,6 @@
         .image-apple {
             border: solid 1em lightgray;
             border-radius: 2%;
-
         }
         .small-circle{
             height: 18px;
@@ -93,13 +90,24 @@
             width: calc(105px + .5em);
             margin: 0 auto;
             line-height: calc(105px - .5em);
-
         }
         p {
             font-size: 46px;
         }
-
-        
+        /*// Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) {
+            body {
+                overflow-x: hidden;
+            }
+            h1 {
+                font-size: 40px;
+                width: 100vw;
+            }
+            h2 {
+                font-size: 24px;
+                width: 100vw;
+            }
+        }
     </style>
 
     <!--    font-family: 'Abel', sans-serif;-->
@@ -148,24 +156,25 @@
     <!---------------------HEADER: END------------------------------------------->
 
     <!---------------------ICON ROW 1: START------------------------------------------->
-    <div class="row py-2 justify-content-center">
+    <div class="row py-2 justify-content-center" id="top_row_icons_smallres">
 
-        <div class="col-2"></div>
-        <div  class="text-white text-center col-4">
-            <div id="red_button" class="my-auto rounded-circle">
+        <div class="col-2 top_row_column"></div>
+        <div class="text-white text-center col-4">
+            <div id="red_button" class="my-auto rounded-circle top_row_icons">
                 DESIGN
             </div>
         </div>
 
 
-        <div  class="text-white text-center col-4">
-            <div id="yellow_button" class="my-auto rounded-circle">
+        <div class="text-white text-center col-4">
+            <div id="yellow_button" class="my-auto rounded-circle top_row_icons">
                 DEVELOP
             </div>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2 top_row_column"></div>
 
     </div>
+
     <!---------------------ICON ROW 1: END------------------------------------------->
 
     <!---------------------ICON ROW 2: START------------------------------------------->
@@ -173,14 +182,14 @@
 
         <div class="col-2"></div>
         <div  class="text-white text-center col-4">
-            <div id="green_button" class="my-auto rounded-circle">
+            <div id="green_button" class="my-auto rounded-circle bottom_row_icons">
                 SUPPORT
             </div>
         </div>
 
 
         <div  class="text-white text-center col-4">
-            <div id="blue_button" class="my-auto rounded-circle">
+            <div id="blue_button" class="my-auto rounded-circle bottom_row_icons">
                 HOST
             </div>
         </div>
@@ -189,7 +198,7 @@
     <!---------------------ICON ROW 2: END------------------------------------------->
 
     <!---------------------SELECTED WORK ROW: START------------------------------------------->
-    <div class="row justify-content-center mt-5" id="section-line-height">
+    <div class="row text-center mt-5" id="section-line-height">
         <div class="col-12" id="selected-work-row">
             SELECTED WORK
         </div>
