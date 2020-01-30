@@ -13,6 +13,9 @@
     <title>Codeup Design Project</title>
 
     <style>
+        body {
+            height: 100vh;
+        }
         .container {
             background-color: #E6E6E6;
         }
@@ -25,6 +28,19 @@
             font-family: 'Anton', sans-serif;
             font-size: 48px;
             color: black;
+        }
+        #navbar-row p {
+            font-family: 'Abel', sans-serif;
+        }
+        #navbar-row div {
+            font-family: 'Abel', sans-serif;
+        }
+        #logo {
+            height: calc(105px + .5em);
+            width: calc(105px + .5em);
+            margin: 0 auto;
+            line-height: calc(105px - .5em);
+            align-items: center;
         }
         .rounded-circle {
             height: calc(105px + .5em);
@@ -115,15 +131,39 @@
 
 <!---------------------CONTAINER: START------------------------------------------->
 <!---------------------NAVBAR: START------------------------------------------->
-    <div class="row" id="navbar-row">
-        <div class="col-12 text-center"></div>
-    </div>
+<!--    <div class="row" id="navbar-row">-->
+
+<!--        <div class="col-12 text-center"></div>-->
+<!--            <img src="images/logo.png" alt="#" id="logo"/>-->
+<!--        </div>-->
+
+<!--        <div class="col-12 text-center"></div>-->
+<!--            <p>codeup design</p>-->
+<!--        </div>-->
+
+<!--        <div class="col-12"></div>-->
+<!--            <div class="col-3">-->
+<!--            SERVICES-->
+<!--        </div>-->
+
+<!--        <div class="col-3">-->
+<!--            WORK-->
+<!--        </div>-->
+
+<!--        <div class="col-3">-->
+<!--            BLOG-->
+<!--        </div>-->
+
+<!--        <div class="col-3">-->
+<!--            CONTACT-->
+<!--        </div>-->
+<!--    </div>-->
 <!---------------------NAVBAR: END------------------------------------------->
 
 <!---------------------HEADER: START------------------------------------------->
     <div class="row text-center" id="header-row">
         <div class="col-12">
-            <h1>VISUAL DESIGN &<br>WEB DEVELOPMENT</h1>
+            <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
             <div class="mt-5">
             <h2>FROM PARK CITY, UTAH</h2>
             </div>
@@ -187,9 +227,9 @@
 <!---------------------FOOTER ROW: START------------------------------------------->
     <div class="row pt-3 container" id="footer_row">
 
-        <p class="col-6">FEATURED PROJECT</p>
+        <p class="col">FEATURED PROJECT</p>
 
-        <div class="col-3"></div>
+        <div class="col"></div>
 
             <div id="red_button_footer" class="rounded-circle">
                 D
