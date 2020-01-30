@@ -4,45 +4,30 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <title>Codeup Design Project</title>
+
+
 
     <style>
         body {
             height: 100vh;
-        }
-        .container {
             background-color: #E6E6E6;
         }
         h1 {
             font-family: 'Anton', sans-serif;
             font-size: 64px;
-            color: black;
         }
         h2 {
             font-family: 'Anton', sans-serif;
             font-size: 48px;
-            color: black;
         }
-        #navbar-row p {
-            font-family: 'Abel', sans-serif;
-        }
-        #navbar-row div {
-            font-family: 'Abel', sans-serif;
-        }
-        #logo {
-            height: calc(105px + .5em);
-            width: calc(105px + .5em);
-            margin: 0 auto;
-            line-height: calc(105px - .5em);
-            align-items: center;
-        }
-        .rounded-circle {
+        .rounded-circle{
             height: calc(105px + .5em);
             width: calc(105px + .5em);
             margin: 0 auto;
@@ -63,126 +48,81 @@
         #blue_button {
             background-color: #00ABA9;
         }
-        #selected-work-row {
-            font-family: 'Abel', sans-serif;
-            line-height: 10em;
-            background-color: #E6E6E6;
-            font-size: 1.5em;
+        #section-line-height{
+            line-height: 5em;
         }
-        #picture_row {
-            background-color: #E6E6E6;
+        #apple {
+            width: 100%;
+            height: auto;
         }
-        #black_tablet {
-            border: 1em solid lightgrey;
+        .image-apple {
+            border: solid 1em lightgray;
             border-radius: 2%;
-            padding: 0;
+
         }
-        #footer_row {
-            background-color: #E6E6E6;
-            margin: 0 0 0 0;
-            padding: 0 0;
+        .small-circle{
+            height: 18px;
+            width: 18px;
+            border: 0;
+            line-height: 18px;
+            display: inline-block;
+            margin: 5px;
         }
-        #footer_row p {
-            font-family: 'Abel', sans-serif;
-            background-color: #E6E6E6;
-            font-size: 1.5em;
-        }
-        #red_button_footer {
+        #small-red {
             background-color: #E6563B;
-            height: 18px;
-            width: 18px;
-            color: black;
-            border: 0;
-            margin: .5em .4em 0 0;
-            line-height: 1.2;
         }
-        #yellow_button_footer {
+        #small-yellow {
             background-color: #EB9D3A;
-            height: 18px;
-            width: 18px;
-            color: black;
-            border: 0;
-            margin: .5em .4em 0 0;
-            line-height: 1.2;
         }
-        #green_button_footer {
+        #small-green {
             background-color: #7CB06C;
-            height: 18px;
-            width: 18px;
-            color: black;
-            border: 0;
-            margin: .5em .4em 0 0;
-            line-height: 1.2;
         }
-        #blue_button_footer {
+        #small-blue {
             background-color: #00ABA9;
-            height: 18px;
-            width: 18px;
-            color: black;
-            border: 0;
-            margin: .5em .4em 0 0;
-            line-height: 1.2;
         }
+        .icons {
+            float: right;
+        }
+
 
     </style>
 
+    <!--    font-family: 'Abel', sans-serif;-->
+
+
 <body>
 <div class="container text-center col-12">
+    <!---------------------CONTAINER: START------------------------------------------->
 
-<!---------------------CONTAINER: START------------------------------------------->
-<!---------------------NAVBAR: START------------------------------------------->
-<!--    <div class="row" id="navbar-row">-->
+    <!---------------------NAVBAR: START------------------------------------------->
+    <div class="row" id="navbar-row">
+        <div class="col-12 text-center"></div>
+    </div>
+    <!---------------------NAVBAR: END------------------------------------------->
 
-<!--        <div class="col-12 text-center"></div>-->
-<!--            <img src="images/logo.png" alt="#" id="logo"/>-->
-<!--        </div>-->
-
-<!--        <div class="col-12 text-center"></div>-->
-<!--            <p>codeup design</p>-->
-<!--        </div>-->
-
-<!--        <div class="col-12"></div>-->
-<!--            <div class="col-3">-->
-<!--            SERVICES-->
-<!--        </div>-->
-
-<!--        <div class="col-3">-->
-<!--            WORK-->
-<!--        </div>-->
-
-<!--        <div class="col-3">-->
-<!--            BLOG-->
-<!--        </div>-->
-
-<!--        <div class="col-3">-->
-<!--            CONTACT-->
-<!--        </div>-->
-<!--    </div>-->
-<!---------------------NAVBAR: END------------------------------------------->
-
-<!---------------------HEADER: START------------------------------------------->
+    <!---------------------HEADER: START------------------------------------------->
     <div class="row text-center" id="header-row">
         <div class="col-12">
             <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
             <div class="mt-5">
-            <h2>FROM PARK CITY, UTAH</h2>
+                <h2>FROM PARK CITY, UTAH</h2>
             </div>
         </div>
     </div>
-<!---------------------HEADER: END------------------------------------------->
+    <!---------------------HEADER: END------------------------------------------->
 
-<!---------------------ICON ROW 1: START------------------------------------------->
-    <div class="row py-2 justify-content-center mt-4">
+    <!---------------------ICON ROW 1: START------------------------------------------->
+    <div class="row py-2 justify-content-center">
 
         <div class="col-2"></div>
-        <div class="text-white text-center col-4">
+        <div  class="text-white text-center col-4">
             <div id="red_button" class="my-auto rounded-circle">
                 DESIGN
             </div>
         </div>
 
 
-        <div class="text-white text-center col-4">
+        <div  class="text-white text-center col-4">
             <div id="yellow_button" class="my-auto rounded-circle">
                 DEVELOP
             </div>
@@ -190,66 +130,66 @@
         <div class="col-2"></div>
 
     </div>
-<!---------------------ICON ROW 1: END------------------------------------------->
+    <!---------------------ICON ROW 1: END------------------------------------------->
 
-<!---------------------ICON ROW 2: START------------------------------------------->
+    <!---------------------ICON ROW 2: START------------------------------------------->
     <div class="row py-2 justify-content-center">
 
         <div class="col-2"></div>
-        <div class="text-white text-center col-4">
+        <div  class="text-white text-center col-4">
             <div id="green_button" class="my-auto rounded-circle">
                 SUPPORT
             </div>
         </div>
 
 
-        <div class="text-white text-center col-4">
+        <div  class="text-white text-center col-4">
             <div id="blue_button" class="my-auto rounded-circle">
                 HOST
             </div>
         </div>
         <div class="col-2"></div>
     </div>
-<!---------------------ICON ROW 2: END------------------------------------------->
+    <!---------------------ICON ROW 2: END------------------------------------------->
 
-<!---------------------SELECTED WORK ROW: START------------------------------------------->
-    <div class="row justify-content-center" id="selected-work-row">
-        SELECTED WORK
+    <!---------------------SELECTED WORK ROW: START------------------------------------------->
+    <div class="row justify-content-center mt-5" id="section-line-height">
+        <div class="col-12" id="selected-work-row">
+            SELECTED WORK
+        </div>
+
     </div>
-<!---------------------SELECTED WORK ROW: END------------------------------------------->
+    <!---------------------SELECTED WORK ROW: END------------------------------------------->
 
-<!---------------------PICTURE ROW: START------------------------------------------->
-    <div class="row justify-content-center" id="picture_row">
-        <img src="images/apple-ipad.jpg" alt="#" id="black_tablet" class="container"/>
+    <!---------------------FOOTER ROW: START------------------------------------------->
+    <div class="row">
+        <div class="col-12" id="picture-row">
+            <img src="img/apple-ipad.jpg" alt="" id="apple" class="image-apple">
+            <div class=" mt-1 text-left ">
+            Featured project
+
+                <div class="icons">
+                <div class="small-circle rounded-circle text-center" id="small-red">
+                    D
+                </div>
+                <div class="small-circle rounded-circle text-center" id="small-yellow">
+                    D
+                </div>
+                <div class="small-circle rounded-circle text-center" id="small-green">
+                    S
+                </div>
+                <div class="small-circle rounded-circle text-center" id="small-blue">
+                    H
+                </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-<!---------------------PICTURE ROW: END------------------------------------------->
+    <!---------------------FOOTER ROW: END------------------------------------------->
 
-<!---------------------FOOTER ROW: START------------------------------------------->
-    <div class="row pt-3 container" id="footer_row">
-
-        <p class="col">FEATURED PROJECT</p>
-
-        <div class="col"></div>
-
-            <div id="red_button_footer" class="rounded-circle">
-                D
-            </div>
-
-            <div id="yellow_button_footer" class="rounded-circle">
-                D
-            </div>
-
-            <div id="green_button_footer" class="rounded-circle">
-                S
-            </div>
-
-            <div id="blue_button_footer" class="rounded-circle">
-                H
-            </div>
-    </div>
-<!---------------------FOOTER ROW: END------------------------------------------->
+    <!---------------------CONTAINER: END------------------------------------------->
 </div>
-<!---------------------CONTAINER: END------------------------------------------->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
