@@ -18,6 +18,7 @@
         body {
             height: 100vh;
             background-color: #E6E6E6;
+            font-family: 'Abel', sans-serif;
         }
         h1 {
             font-family: 'Anton', sans-serif;
@@ -83,8 +84,22 @@
         .icons {
             float: right;
         }
+        .items {
+            display: inline-block;
+            margin: 1em 1em;
+        }
+        #logo {
+            height: calc(105px + .5em);
+            width: calc(105px + .5em);
+            margin: 0 auto;
+            line-height: calc(105px - .5em);
 
+        }
+        p {
+            font-size: 46px;
+        }
 
+        
     </style>
 
     <!--    font-family: 'Abel', sans-serif;-->
@@ -95,9 +110,30 @@
     <!---------------------CONTAINER: START------------------------------------------->
 
     <!---------------------NAVBAR: START------------------------------------------->
-    <div class="row" id="navbar-row">
-        <div class="col-12 text-center"></div>
-    </div>
+                <div class="row" id="navbar-row">
+                    <div class="col-12 text-center"></div>
+                        <img src="images/logo.png" alt="#" id="logo"/>
+                    </div>
+                    <div class="col-12 text-center"></div>
+                     <p>codeup design</p>
+                    </div>
+
+                        <div class="text-center " >
+                            <div class="items">
+                                SERVICES
+                            </div>
+                            <div class="items">
+                                WORK
+                            </div>
+                            <div class="items">
+                                BLOG
+                            </div>
+                            <div class="items">
+                                CONTACT
+                            </div>
+                    </div>
+
+
     <!---------------------NAVBAR: END------------------------------------------->
 
     <!---------------------HEADER: START------------------------------------------->
@@ -164,7 +200,7 @@
     <!---------------------FOOTER ROW: START------------------------------------------->
     <div class="row">
         <div class="col-12" id="picture-row">
-            <img src="img/apple-ipad.jpg" alt="" id="apple" class="image-apple">
+            <img src="images/apple-ipad.jpg" alt="" id="apple" class="image-apple">
             <div class=" mt-1 text-left ">
             Featured project
 
