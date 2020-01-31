@@ -26,6 +26,7 @@
             font-family: 'Anton', sans-serif;
             font-size: 64px;
         }
+
         h2 {
             font-family: 'Anton', sans-serif;
             font-size: 48px;
@@ -139,13 +140,23 @@
             font-family: 'Abel', sans-serif;
             margin-left: 1em;
         }
-        .nav-sm-items span {
 
-        }
+
         .small {
             display: none;
         }
-        /*// Extra small devices (portrait phones, under 576px)*/
+        span {
+            margin: 0 1.2em;
+            font-size: 16px;
+        }
+        #design-sm {
+            font-size: 20px;
+        }
+        .medium {
+            display: none;
+        }
+
+        /*//  small devices (portrait phones, under 576px)*/
         @media (min-width: 576px) {
             .extra_small {
                 display: none;
@@ -153,12 +164,50 @@
             .small {
                 display: block;
             }
+            span {
+                margin: 0 1.2em;
+                font-size: 16px;
+            }
+            #design-sm {
+                font-size: 20px;
+                font-family: 'Abel', sans-serif;
+                line-height: 3em;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            h2  {
+                font-size: 32px;
+            }
+            .medium {
+                display: none;
+            }
+
         }
-        /*// Small devices (landscape phones, 768px and up)*/
+        /*// medium devices (landscape phones, 768px and up)*/
         @media (min-width: 768px) {
             .small {
                 display: none;
             }
+            .medium {
+                display: block;
+            }
+            ul {
+                list-style: none;
+            }
+            .md-nav li:nth-child(2) {
+                font-size: 180%;
+            }
+            .md-nav li:nth-child(3) {
+               padding-left: 30%;
+            }
+            .md-nav li:nth-child(n+3) {
+            margin: 0 .6em;
+            }
+
+
+
+
         }
     </style>
 
@@ -195,7 +244,7 @@
     <!---------------------NAVBAR EXTRA-SMALL: END------------------------------------------->
     <!---------------------NAVBAR SMALL: START------------------------------------------->
     <div class="row small">
-        <div class="nav-sm-items m-auto small">
+        <div class="nav-sm-items m-auto small ">
             <span>SERVICES</span>
             <span>WORK</span>
             <span><img src="images/logo.png" alt="#" id="logo"/></span>
@@ -203,14 +252,45 @@
             <span>CONTACT</span>
         </div>
     </div>
-    <div class="col-sm-12 small">codeup design</div>
+    <div class="col-sm-12 small" id="design-sm">codeup design</div>
 </div>
+
 <!---------------------NAVBAR SMALL: END------------------------------------------->
+
+<!---------------------NAVBAR MEDIUM: START------------------------------------------->
+<div class="row medium">
+    <div class="nav-md-items m-auto  ">
+        <ul class="d-flex align-items-center md-nav">
+            <li>
+                <img src="images/logo.png" alt="#" id="logo"/>
+            </li>
+            <li>
+                codeup design
+            </li>
+
+            <li >
+                SERVICES
+            </li>
+            <li>
+                WORK
+            </li>
+            <li>
+                BLOG
+            </li>
+            <li>
+                CONTACT
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!---------------------NAVBAR MEDIUM: END------------------------------------------->
 <!---------------------NAVBAR: END------------------------------------------->
 
 <!---------------------HEADER: START------------------------------------------->
 <div class="row text-center" id="header-row">
-    <div class="col-12">
+    <div class="col-12" id="header">
         <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
         <div class="mt-5">
             <h2>FROM PARK CITY, UTAH</h2>
