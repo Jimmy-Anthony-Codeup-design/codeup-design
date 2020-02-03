@@ -10,351 +10,29 @@
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/codeup-design.css">
     <script src="https://kit.fontawesome.com/068546a344.js"></script>
-
 
     <title>Codeup Design Project</title>
 
-    <style>
-        body {
-            height: 100vh;
-            background-color: #f0f0f0;
-            font-family: 'Abel', sans-serif;
-            margin: 0;
-
-
-        }
-
-        h1 {
-            font-family: 'Anton', sans-serif;
-            font-size: 64px;
-        }
-
-        h2 {
-            font-family: 'Anton', sans-serif;
-            font-size: 48px;
-        }
-        .rounded-circle {
-            height: calc(105px + .5em);
-            width: calc(105px + .5em);
-            margin: 0 auto;
-            line-height: calc(105px - .5em);
-            align-items: center;
-            font-family: 'Anton', sans-serif;
-            border: .5em solid white;
-        }
-        .main-red_button {
-            background-color: #E6563B;
-        }
-        .main-yellow_button {
-            background-color: #EB9D3A;
-        }
-        .main-green_button {
-            background-color: #7CB06C;
-        }
-        .main-blue_button {
-            background-color: #00ABA9;
-        }
-        .section-line-height {
-            line-height: 5em;
-        }
-        .image-list {
-            border: solid .2em #e6e6e6;
-            border-radius: 2%;
-            width: 100%;
-            height: auto
-        }
-        .side_images {
-            border: solid .2em #e6e6e6;
-        }
-        .small-circle {
-            height: 18px;
-            width: 18px;
-            border: 0;
-            line-height: 18px;
-            display: inline-block;
-            margin: 5px;
-        }
-        .small-red {
-            background-color: #E6563B;
-        }
-        .small-yellow {
-            background-color: #EB9D3A;
-        }
-        .small-green {
-            background-color: #7CB06C;
-        }
-        .small-blue {
-            background-color: #00ABA9;
-        }
-        .icons {
-            float: right;
-        }
-        .items {
-            display: inline-block;
-            margin: 1em 1em;
-        }
-        #logo {
-            height: calc(105px + .5em);
-            width: calc(105px + .5em);
-            margin: 0 auto;
-            line-height: calc(105px - .5em);
-        }
-        #logo2 {
-            height: calc(105px + .5em);
-            width: calc(105px + .5em);
-            margin: 0 auto;
-            line-height: calc(105px - .5em);
-
-        }
-        #logo3 {
-            height: calc(105px + .5em);
-            width: calc(105px + .5em);
-            margin: 0 auto;
-            line-height: calc(105px - .5em);
-        }
-        p {
-            font-size: 46px;
-        }
-        #selected_work_row {
-            line-height: 6em;
-        }
-        .card-body {
-            background-color: #f0f0f0;
-            padding: 0;
-        }
-        .card-body img {
-            height: 50px;
-            width: 60px;
-            margin-left: 4px;
-        }
-        .card-text {
-            font-size: 1.1em;
-            height: 48px;
-        }
-        .card {
-            border-color: #f0f0f0;
-        }
-        .row {
-            background-color: #f0f0f0;
-        }
-        h5 {
-            font-family: 'Anton', sans-serif;
-        }
-        .col-md-4 {
-            background-color: #f0f0f0;
-        }
-        #twitter_icon {
-            text-decoration: none;
-            background-color: #f0f0f0;
-        }
-        #twitter_row {
-            background-color: #f0f0f0;
-        }
-        #twitter_row span {
-            color: black;
-            font-family: 'Abel', sans-serif;
-            margin-left: 1em;
-        }
-
-
-        .small {
-            display: none;
-        }
-        span {
-            margin: 0 1.2em;
-            font-size: 16px;
-        }
-        #design-sm {
-            font-size: 20px;
-        }
-        .medium {
-            display: none;
-        }
-        .white-nav {
-            background: white;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 50px 0 0 0;
-        }
-        .white-nav2 {
-            background: white;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 75px;
-        }
-        .white-nav3 {
-            background: white;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-        }
-
-        /*//  small devices (portrait phones, under 576px)*/
-        @media (min-width: 576px) {
-            .extra_small {
-                display: none;
-            }
-            .small {
-                display: block;
-            }
-            span {
-                margin: 0 1.2em;
-                font-size: 16px;
-            }
-            #design-sm {
-                font-size: 20px;
-                font-family: 'Abel', sans-serif;
-                line-height: 3em;
-            }
-            h1 {
-                font-size: 50px;
-            }
-            h2  {
-                font-size: 32px;
-            }
-            .medium {
-                display: none;
-            }
-            #design-sm {
-                font-size: 36px;
-            }
-            /*body {*/
-            /*    margin-top:3em ;*/
-            /*}*/
-
-        }
-        /*// medium devices (landscape phones, 768px and up)*/
-        @media (min-width: 768px) {
-            .small {
-                display: none;
-            }
-            .medium {
-                display: block;
-            }
-            ul {
-                list-style: none;
-                padding: 0;
-            }
-            .md-nav li:nth-child(2) {
-                font-size: 170%;
-            }
-            .right-nav-items {
-                margin-left: 2em;
-            }
-            #services-md {
-                margin-left: 150px;
-            }
-
-            /*.md-nav li:nth-child(3) {*/
-            /*    padding-left: 30%;*/
-            /*}*/
-            /*.md-nav li:nth-child(n+3) {*/
-            /*    margin: 0 .6em;*/
-            /*    font-size: 14px;*/
-            /*}*/
-
-
-            /*// large devices (landscape phones, 922px and up)*/
-            @media (min-width: 922px) {
-                .small {
-                    display: none;
-                }
-
-                .medium {
-                    display: block;
-                }
-
-
-                ul {
-                    list-style: none;
-                    padding: 0;
-                }
-
-                .md-nav li:nth-child(2) {
-                    font-size: 170%;
-                }
-
-                /*.md-nav li:nth-child(3) {*/
-                /*    padding-left: 30%;*/
-                /*}*/
-
-                /*.md-nav li:nth-child(n+3) {*/
-                /*    margin: 0 .6em;*/
-                /*    font-size: 14px;*/
-            }
-            /*body {*/
-            /*    margin: 2% 12%;*/
-        }
-
-        .container-2 {
-            margin: 2% 12%;
-
-
-        }
-
-        /*// x-large devices (landscape phones, 1200px and up)*/
-        @media (min-width: 1200px) {
-            .small {
-                display: none;
-            }
-
-            .medium {
-                display: block;
-            }
-
-
-            ul {
-                list-style: none;
-                padding: 0;
-            }
-
-            .md-nav li:nth-child(2) {
-                font-size: 170%;
-            }
-
-            /*.md-nav li:nth-child(3) {*/
-            /*    padding-left: 30%;*/
-            /*}*/
-
-            /*.md-nav li:nth-child(n+3) {*/
-            /*    margin: 0 .6em;*/
-            /*    font-size: 14px;*/
-            /*}*/
-            .container-2 {
-                margin: 4% 14%;
-            }
-
-
-        }
-
-    </style>
-
-    <!---------------------CONTAINER: START------------------------------------------->
+<!---------------------CONTAINER: START------------------------------------------->
 <body>
 
 <div class="container text-center col-12 ">
 
-    <!---------------------NAVBAR: START------------------------------------------->
-    <!---------------------NAVBAR EXTRA-SMALL: START------------------------------------------->
-
-    <div class="row extra_small" id="navbar-row">
+<!---------------------NAVBAR: START------------------------------------------->
+<!---------------------NAVBAR EXTRA-SMALL: START------------------------------------------->
+    <div class="row extra_small nav_hide" id="navbar-row">
         <div class="col-12 text-center white-nav">
-            <img src="images/logo.png" alt="#" id="logo"/>
+            <img src="images/logo.png" alt="codeup design logo" class="logo"/>
         </div>
     </div>
 
-    <div class="text-center extra_small mt-4">
+    <div class="text-center extra_small mt-4 nav_hide">
         <p>codeup design</p>
     </div>
 
-    <div class="text-center extra_small">
+    <div class="text-center extra_small nav_hide">
         <div class="items">
             SERVICES
         </div>
@@ -368,35 +46,56 @@
             CONTACT
         </div>
     </div>
-    <!---------------------NAVBAR EXTRA-SMALL: END------------------------------------------->
-    <!---------------------NAVBAR SMALL: START------------------------------------------->
-    <div class="row small">
+<!---------------------NAVBAR EXTRA-SMALL: END------------------------------------------->
+<!---------------------NAVBAR SMALL: START------------------------------------------->
+    <div class="row small nav_hide">
         <div class="nav-sm-items m-auto small">
-
-            <div class="white-nav2"><span class="services">SERVICES</span><span>WORK</span>
-                <span><img src="images/logo.png" alt="#" id="logo2"/></span><span>BLOG</span><span>CONTACT</span>
-            </div>
-
-
+            <span>SERVICES</span>
+            <span>WORK</span>
+            <span><img src="images/logo.png" alt="codeup design logo" class="logo"/></span>
+            <span>BLOG</span>
+            <span>CONTACT</span>
         </div>
     </div>
-    <div class="col-sm-12 small mt-3" id="design-sm">codeup design</div>
+    <div class="col-sm-12 small nav_hide">codeup design</div>
 </div>
-
 <!---------------------NAVBAR SMALL: END------------------------------------------->
-
 <!---------------------NAVBAR MEDIUM: START------------------------------------------->
-<div class="row medium">
-    <div class="nav-md-items m-auto ">
+<div class="row medium nav_hide">
+    <div class="nav-md-items m-auto medium nav_hide">
         <ul class="d-flex align-items-center md-nav white-nav3">
             <li>
-                <img src="images/logo.png" alt="#" id="logo3"/>
+                <img src="images/logo.png" class="logo3" alt="#"/>
             </li>
             <li>
                 codeup design
             </li>
-
-
+            <li class="right-nav-items services-md">
+                SERVICES
+            </li>
+            <li class="right-nav-items">
+                WORK
+            </li>
+            <li class="right-nav-items">
+                BLOG
+            </li>
+            <li class="right-nav-items">
+                CONTACT
+            </li>
+        </ul>
+    </div>
+</div>
+<!---------------------NAVBAR MEDIUM: END------------------------------------------->
+<!---------------------NAVBAR LARGE: START------------------------------------------->
+<div class="row medium">
+    <div class="nav-md-items m-auto medium">
+        <ul class="d-flex md-nav white-nav3">
+            <li>
+                <img src="images/logo.png" alt="#" id="logo3"/>
+            </li>
+            <li class="large_navbar">
+                codeup design
+            </li>
             <li class="right-nav-items" id="services-md">
                 SERVICES
             </li>
@@ -412,9 +111,7 @@
         </ul>
     </div>
 </div>
-
-
-<!---------------------NAVBAR MEDIUM: END------------------------------------------->
+<!---------------------NAVBAR LARGE: END------------------------------------------->
 <!---------------------NAVBAR: END------------------------------------------->
 
 <!---------------------HEADER: START------------------------------------------->
@@ -462,25 +159,30 @@
     <!---------------------BUTTON: END------------------------------------------->
     <hr>
     <!---------------------SELECTED WORK ROW: START------------------------------------------->
-    <div class="row" id="selected_work_row">
-        <div class="col-8 text-left">
+    <div class="selected_last_both ml-1 small selected_work_row">
+        <span class="ml-0">
+        SELECTED WORK
+        </span>
+        <span class="last_align_medium">
+        THE LAST
+        </span>
+    </div>
+
+    <div class="row selected_centered mb-4 small selected_work_row">
+        <div class="col-12 text-center">
             SELECTED WORK
         </div>
-
-        <div class="col-4 text-left px-0 hide_xs hide_small">
-            THE LAST
-        </div>
     </div>
-    <!---------------------SELECTED WORK ROW: END------------------------------------------->
+<!---------------------SELECTED WORK ROW: END------------------------------------------->
 
-    <!---------------------IMAGES ROW: START------------------------------------------->
+<!---------------------IMAGES ROW: START------------------------------------------->
     <div class="row">
         <div class="col-md-8">
             <div class="row">
 
                 <div class="col-12 col-sm-6">
-                    <img src="images/apple-ipad.jpg" alt="" class="image-list">
-                    <div class=" mt-1 text-left ">
+                    <img src="images/apple-ipad.jpg" alt="apple ipad" class="image-list">
+                    <div class="mt-1 text-left">
                         Featured project
                         <div class="icons">
                             <div class="small-circle rounded-circle text-center small-red">
@@ -499,9 +201,9 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 hide_xs">
-                    <img src="images/macbook.jpg" alt="" class="image-list">
-                    <div class=" mt-1 text-left ">
+                <div class="col-sm-6 small">
+                    <img src="images/macbook.jpg" alt="macbook" class="image-list">
+                    <div class="mt-1 text-left">
                         Featured project
                         <div class="icons">
                             <div class="small-circle rounded-circle text-center small-red">
@@ -521,10 +223,10 @@
                 </div>
             </div>
 
-            <div class="row hide_xs">
-                <div class="col-sm-6">
-                    <img src="images/man.jpg" alt="" class="image-list">
-                    <div class=" mt-1 text-left ">
+            <div class="row">
+                <div class="col-sm-6 small">
+                    <img src="images/man.jpg" alt="man with glasses" class="image-list">
+                    <div class="mt-1 text-left">
                         Featured project
                         <div class="icons">
                             <div class="small-circle rounded-circle text-center small-red">
@@ -543,9 +245,9 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <img src="images/security.jpg" alt="" class="image-list">
-                    <div class=" mt-1 text-left ">
+                <div class="col-sm-6 small">
+                    <img src="images/security.jpg" alt="security screen" class="image-list">
+                    <div class="mt-1 text-left">
                         Featured project
                         <div class="icons">
                             <div class="small-circle rounded-circle text-center small-red">
@@ -567,18 +269,18 @@
             </div>
 
         </div>
-        <!---------------------IMAGES ROW: END------------------------------------------->
+<!---------------------IMAGES ROW: END------------------------------------------->
 
-        <!---------------------SIDEBAR: START------------------------------------------->
-        <div class="col-md-4 hide_xs hide_small">
+<!---------------------SIDEBAR: START------------------------------------------->
+        <div class="col-md-4 small medium">
             <div class="card">
                 <div class="card-body">
                     <div class="row">
 
                         <div class="card mb-3">
                             <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="images/mobile-phone.jpg" class="side_images" alt="#">
+                                <div class="col-md-3">
+                                    <img src="images/mobile-phone.jpg" class="side_images" alt="mobile phone">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -590,8 +292,8 @@
 
                         <div class="card mb-3">
                             <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="images/head.jpg" class="side_images" alt="#">
+                                <div class="col-md-3">
+                                    <img src="images/head.jpg" class="side_images" alt="polygon head">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -603,8 +305,8 @@
 
                         <div class="card mb-3">
                             <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="images/ipad.jpg" class="side_images" alt="#">
+                                <div class="col-md-3">
+                                    <img src="images/ipad.jpg" class="side_images" alt="ipad">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -626,9 +328,9 @@
                             </div>
                         </div>
                     </div>
-                    <!---------------------SIDEBAR: END------------------------------------------->
+<!---------------------SIDEBAR: END------------------------------------------->
 
-                    <!---------------------CONTAINER: END------------------------------------------->
+<!---------------------CONTAINER: END------------------------------------------->
                 </div>
             </div>
         </div>
