@@ -75,7 +75,7 @@ h2 {
     margin: 0 auto;
     line-height: calc(105px - .5em);
 }
-.logo2 {
+#logo2 {
     height: calc(105px + .5em);
     width: calc(105px + .5em);
     margin: 0 auto;
@@ -220,6 +220,11 @@ span {
     .selected_last_both {
         display: none;
     }
+.small-image{
+    display: block;
+}
+
+
 }
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px){
@@ -227,7 +232,7 @@ span {
         display: none;
     }
     .small {
-        display: block;
+        display: none;
     }
     .medium {
         display: block;
@@ -255,7 +260,7 @@ span {
 /*//Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px){
     .small {
-        display: block;
+        display: none;
     }
     .medium {
         display: block;
@@ -286,7 +291,7 @@ span {
         display: none;
     }
     .small {
-        display: block;
+        display: none;
     }
     .medium {
         display: block;
